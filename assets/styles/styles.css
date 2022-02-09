@@ -1,0 +1,167 @@
+html, body, main, header, footer, section, div, ol, li, figure, img, figcaption, p, h1, h2, h3, button {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 2fr, 7fr, 1fr;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #080808;
+    color: #f8f8f8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    grid-area: 1 / 1 / 2 / 13;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+main {
+    grid-area: 2 / 1 / 3 / 13;
+    color: #080808;
+}
+
+footer {
+    grid-area: 3 / 1 / 4 / 13;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header section {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    display: inline-block;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.container_titre {
+    text-align: center;
+}
+
+.container_legende {
+    background-color: #080808;
+    color: #f8f8f8;
+    padding: 5px;
+}
+.container_legende_info {
+    background-color: #f8f8f8;
+    color: #080808;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_legende_info section {
+    margin: 5px 15px;
+}
+
+.petit_parc, .moyen_parc, .grand_parc {
+    width: 20px;
+    height: 20px;
+}
+
+.petit_parc {
+    background-color: #80c599;
+}
+
+.moyen_parc {
+    background-color: #3d8256;
+}
+
+.grand_parc {
+    background-color: #0f4e26;
+}
+
+.deux_saisons, .quatre_saisons {
+    width: 5px;
+    height: 25px;
+    transform: rotate(35deg);
+    margin: 0 5px;
+}
+
+.deux_saisons {
+    background-color:#4bbdcd ;
+}
+
+.quatre_saisons {
+    background-color: #0e7988;
+}
+
+ol li img {
+    width: 25px;
+    height: auto;
+}
+
+ol {
+    list-style-type: none;
+}
+
+ol li {
+    display: flex;
+    align-items: center;
+}
+
+#map {
+    width: 100vw;
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    margin: 10px 5px;
+    padding: 5px;
+}
+
+p {
+    padding: 5px;
+}
+
+figure {
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+figcaption {
+    margin-top: 10px;
+}
+
+@media (min-width: 900px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1100px) {
+    header {
+        flex-direction: row;
+        align-content: space-between;
+    }
+
+    .container_titre {
+        text-align: left;
+    }
+}
